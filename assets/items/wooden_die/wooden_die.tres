@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://c4mv54cntvxnt"]
+
+[ext_resource type="Texture2D" uid="uid://53wb0gnu6tp" path="res://assets/items/wooden_die/wooden_die.png" id="1_qieic"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_dpoeb"]
+
+[resource]
+script = ExtResource("2_dpoeb")
+id = 10
+item_sprite = ExtResource("1_qieic")
+item_name = "Wooden Die"
+item_description = "> [color=yellow]Rerolls[/color] all non-empty item containers in the current room into [common]common[/common] or [uncommon]uncommon[/uncommon] items"
+rarity = 2
+is_active = true
+active_charges = 5
+item_scene = "res://assets/items/wooden_die/wooden_die.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

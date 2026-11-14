@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://67vqwbc0fh2v"]
+
+[ext_resource type="Script" uid="uid://bp37aboyegelb" path="res://assets/items/glass_die/glass_die.gd" id="1_qbydw"]
+[ext_resource type="Resource" uid="uid://cx2cs4unf8kxa" path="res://assets/items/glass_die/glass_die.tres" id="2_qbydw"]
+
+[node name="GlassDie" type="Node" unique_id=751888986]
+script = ExtResource("1_qbydw")
+data = ExtResource("2_qbydw")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

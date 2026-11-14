@@ -1,0 +1,13 @@
+[gd_resource type="TileSet" format=3 uid="uid://b1vpvdr0aya5p"]
+
+[ext_resource type="Texture2D" uid="uid://bdbg4krkr3805" path="res://assets/rooms/heck/assets/ground.png" id="1_xcgk0"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_trrg4"]
+texture = ExtResource("1_xcgk0")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[resource]
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_trrg4")

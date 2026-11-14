@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bilmt268fxbww"]
+
+[ext_resource type="Script" uid="uid://bc3gj0hqa2w03" path="res://assets/items/fire_flower/fire_flower.gd" id="1_umlm3"]
+[ext_resource type="Resource" uid="uid://bowwraqrt75ex" path="res://assets/items/fire_flower/fire_flower.tres" id="2_umlm3"]
+
+[node name="FireFlower" type="Node" unique_id=751495320]
+script = ExtResource("1_umlm3")
+data = ExtResource("2_umlm3")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

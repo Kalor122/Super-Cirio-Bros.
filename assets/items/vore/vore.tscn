@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bu3vklv2mucws"]
+
+[ext_resource type="Script" uid="uid://cgvwjx0klyrv3" path="res://assets/items/vore/vore.gd" id="1_pq81g"]
+[ext_resource type="Resource" uid="uid://cqflbg7xxooiw" path="res://assets/items/vore/vore.tres" id="2_pq81g"]
+
+[node name="Vore" type="Node" unique_id=1236160232]
+script = ExtResource("1_pq81g")
+data = ExtResource("2_pq81g")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

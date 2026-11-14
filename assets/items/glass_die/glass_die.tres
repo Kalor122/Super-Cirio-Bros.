@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cx2cs4unf8kxa"]
+
+[ext_resource type="Texture2D" uid="uid://ctemddfw1t10e" path="res://assets/items/glass_die/glass_die.png" id="1_vvjaw"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_wu20d"]
+
+[resource]
+script = ExtResource("2_wu20d")
+id = 8
+item_sprite = ExtResource("1_vvjaw")
+item_name = "Glass Die"
+item_description = "> [color=yellow]Rerolls[/color] all item containers in the current room, independent if they're empty or not
+> [color=yellow]20%[/color] chance to [color=red]break[/color] on use
+> Chance is affected by luck"
+rarity = 3
+is_active = true
+active_charges = 6
+item_scene = "res://assets/items/glass_die/glass_die.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

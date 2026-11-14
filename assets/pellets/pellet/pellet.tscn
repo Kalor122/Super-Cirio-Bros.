@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cf4cl6v681hpg"]
+
+[ext_resource type="Script" uid="uid://vpypbefua46i" path="res://assets/pellets/pellet/pellet.gd" id="1_7rjkb"]
+[ext_resource type="Texture2D" uid="uid://cscawkfw8jlj8" path="res://assets/pellets/pellet/pellet.png" id="2_7rjkb"]
+[ext_resource type="Script" uid="uid://cgfhdu8kp8cpp" path="res://assets/pellets/pellet_data_class.gd" id="2_vok6d"]
+[ext_resource type="Script" uid="uid://cicgk1vijq6qk" path="res://assets/classes/ghost_component_class.gd" id="4_511sc"]
+[ext_resource type="FontFile" uid="uid://bbpgymgh5gr2m" path="res://assets/fonts/super-mario-bros-nes.ttf" id="4_vok6d"]
+[ext_resource type="Texture2D" uid="uid://2ycqt0skj6bk" path="res://assets/pellets/pellet/pellet_aura.png" id="4_vtvbo"]
+
+[sub_resource type="Resource" id="Resource_ca6ft"]
+script = ExtResource("2_vok6d")
+texture = ExtResource("2_7rjkb")
+metadata/_custom_type_script = "uid://cgfhdu8kp8cpp"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 8.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7rjkb"]
+radius = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vok6d"]
+radius = 8.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font = ExtResource("4_vok6d")
+font_size = 4
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Pellet" type="CharacterBody2D" unique_id=833089359 node_paths=PackedStringArray("collision")]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_7rjkb")
+data = SubResource("Resource_ca6ft")
+collision = NodePath("Detector")
+metadata/_custom_type_script = "uid://h0b5pncxnbwi"
+
+[node name="Aura" type="Sprite2D" parent="." unique_id=685669311]
+modulate = Color(0, 0.6509804, 1, 1)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_vtvbo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=181637212]
+texture = ExtResource("2_7rjkb")
+
+[node name="GhostComponent" type="Node" parent="Sprite2D" unique_id=64370785]
+script = ExtResource("4_511sc")
+metadata/_custom_type_script = "uid://cicgk1vijq6qk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=589352767]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=670604746]
+collision_layer = 0
+collision_mask = 10
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=32447750]
+shape = SubResource("CircleShape2D_7rjkb")
+
+[node name="Detector" type="Area2D" parent="." unique_id=547076495]
+collision_layer = 4
+collision_mask = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector" unique_id=1427015887]
+shape = SubResource("CircleShape2D_vok6d")
+debug_color = Color(0.99699646, 0.05073563, 1.92523e-07, 0.41960785)
+
+[node name="DmgLabel" type="Label" parent="." unique_id=1774544232]
+visible = false
+texture_filter = 1
+offset_left = -8.0
+offset_top = -2.0
+offset_right = 8.0
+offset_bottom = 3.0
+text = "1.00"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

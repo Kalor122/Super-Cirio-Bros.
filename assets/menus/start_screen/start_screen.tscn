@@ -1,0 +1,518 @@
+[gd_scene format=3 uid="uid://d5a863djsfw6"]
+
+[ext_resource type="FontFile" uid="uid://bbpgymgh5gr2m" path="res://assets/fonts/super-mario-bros-nes.ttf" id="1_jxsl3"]
+[ext_resource type="Material" uid="uid://dokgddy10uuf7" path="res://assets/shaders/shader_presets/flesh_noise_shader.tres" id="1_ut57m"]
+[ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="2_370w0"]
+[ext_resource type="Texture2D" uid="uid://dtgkrnjs5u1ec" path="res://assets/menus/start_screen/killmeplease.png" id="2_xq17r"]
+[ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="3_vtd3i"]
+[ext_resource type="Texture2D" uid="uid://c2xllpge60uqc" path="res://assets/menus/start_screen/logo.png" id="3_xq17r"]
+
+[sub_resource type="Resource" id="Resource_q8exk"]
+script = ExtResource("2_370w0")
+color = Color(0.25, 0.25, 0.25, 1)
+width_left = 2
+width_top = 2
+width_right = 2
+width_bottom = 2
+metadata/_custom_type_script = "uid://cjmmhbp1b5312"
+
+[sub_resource type="StyleBox" id="StyleBox_ncp0x"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+script = ExtResource("3_vtd3i")
+color = Color(0.05, 0.05, 0.05, 0.64705884)
+borders = Array[ExtResource("2_370w0")]([SubResource("Resource_q8exk")])
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_curvature_top_left = -7.0
+corner_curvature_top_right = -7.0
+corner_curvature_bottom_right = -7.0
+corner_curvature_bottom_left = -7.0
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jxsl3"]
+
+[sub_resource type="Resource" id="Resource_nscxh"]
+script = ExtResource("2_370w0")
+color = Color(1, 0.7666667, 0, 1)
+width_left = 2
+width_top = 2
+width_right = 2
+width_bottom = 2
+metadata/_custom_type_script = "uid://cjmmhbp1b5312"
+
+[sub_resource type="StyleBox" id="StyleBox_rrur7"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+script = ExtResource("3_vtd3i")
+color = Color(0.53, 0, 0, 0.64705884)
+borders = Array[ExtResource("2_370w0")]([SubResource("Resource_nscxh")])
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_curvature_top_left = -7.0
+corner_curvature_top_right = -7.0
+corner_curvature_bottom_right = -7.0
+corner_curvature_bottom_left = -7.0
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="Resource" id="Resource_3x0e6"]
+script = ExtResource("2_370w0")
+width_left = 2
+width_top = 2
+width_right = 2
+width_bottom = 2
+metadata/_custom_type_script = "uid://cjmmhbp1b5312"
+
+[sub_resource type="StyleBox" id="StyleBox_5o4an"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+script = ExtResource("3_vtd3i")
+color = Color(0.53, 0, 0, 0.64705884)
+borders = Array[ExtResource("2_370w0")]([SubResource("Resource_3x0e6")])
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_curvature_top_left = -7.0
+corner_curvature_top_right = -7.0
+corner_curvature_bottom_right = -7.0
+corner_curvature_bottom_left = -7.0
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="Resource" id="Resource_5ykuq"]
+script = ExtResource("2_370w0")
+color = Color(1, 0.7666667, 0, 1)
+width_left = 2
+width_top = 2
+width_right = 2
+width_bottom = 2
+metadata/_custom_type_script = "uid://cjmmhbp1b5312"
+
+[sub_resource type="StyleBox" id="StyleBox_47any"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+script = ExtResource("3_vtd3i")
+color = Color(0.34, 0, 0, 0.64705884)
+borders = Array[ExtResource("2_370w0")]([SubResource("Resource_5ykuq")])
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_curvature_top_left = -7.0
+corner_curvature_top_right = -7.0
+corner_curvature_bottom_right = -7.0
+corner_curvature_bottom_left = -7.0
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="Resource" id="Resource_ydjk1"]
+script = ExtResource("2_370w0")
+width_left = 2
+width_top = 2
+width_right = 2
+width_bottom = 2
+metadata/_custom_type_script = "uid://cjmmhbp1b5312"
+
+[sub_resource type="StyleBox" id="StyleBox_yxe81"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+script = ExtResource("3_vtd3i")
+color = Color(0.34, 0, 0, 0.64705884)
+borders = Array[ExtResource("2_370w0")]([SubResource("Resource_ydjk1")])
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_curvature_top_left = -7.0
+corner_curvature_top_right = -7.0
+corner_curvature_bottom_right = -7.0
+corner_curvature_bottom_left = -7.0
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="Theme" id="Theme_xq17r"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/fonts/font = ExtResource("1_jxsl3")
+Button/styles/disabled = SubResource("StyleBox_ncp0x")
+Button/styles/focus = SubResource("StyleBoxEmpty_jxsl3")
+Button/styles/hover = SubResource("StyleBox_rrur7")
+Button/styles/hover_pressed = SubResource("StyleBox_5o4an")
+Button/styles/normal = SubResource("StyleBox_47any")
+Button/styles/pressed = SubResource("StyleBox_yxe81")
+Label/colors/font_shadow_color = Color(0, 0, 0, 1)
+Label/constants/shadow_offset_x = 2
+Label/constants/shadow_offset_y = 2
+Label/font_sizes/font_size = 25
+Label/fonts/font = ExtResource("1_jxsl3")
+
+[sub_resource type="Gradient" id="Gradient_jxsl3"]
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_yf5fn"]
+gradient = SubResource("Gradient_jxsl3")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="Curve" id="Curve_q8exk"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_ncp0x"]
+offsets = PackedFloat32Array(0, 0.33333334, 0.7318008)
+colors = PackedColorArray(1, 0.9333334, 0, 1, 1, 0.40000004, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Shader" id="Shader_jxsl3"]
+code = "shader_type canvas_item;
+// Procedural fire for Godot 4.x. Dark areas are fully transparent.
+// Put it on a ColorRect or Sprite2D (any size, no texture needed).
+
+uniform float speed : hint_range(0.0, 3.0) = 0.9;
+uniform float noise_scale : hint_range(0.5, 10.0) = 3.5;
+uniform float distortion : hint_range(0.0, 1.0) = 0.35;
+uniform float flame_height : hint_range(0.2, 1.0) = 0.9;
+uniform float fuel : hint_range(0.0, 2.0) = 1.0;
+uniform float edge_fade : hint_range(0.0, 0.5) = 0.08;
+uniform float brightness : hint_range(0.5, 3.0) = 1.3;
+
+uniform vec4 color_dark : source_color = vec4(0.30, 0.02, 0.0, 1.0);
+uniform vec4 color_red : source_color = vec4(0.85, 0.10, 0.0, 1.0);
+uniform vec4 color_orange : source_color = vec4(1.0, 0.50, 0.05, 1.0);
+uniform vec4 color_core : source_color = vec4(1.0, 0.95, 0.45, 1.0);
+
+float hash(vec2 p) {
+	p = fract(p * vec2(123.34, 456.21));
+	p += dot(p, p + 45.32);
+	return fract(p.x * p.y);
+}
+
+float noise(vec2 p) {
+	vec2 i = floor(p);
+	vec2 f = fract(p);
+	f = f * f * (3.0 - 2.0 * f);
+	float a = hash(i);
+	float b = hash(i + vec2(1.0, 0.0));
+	float c = hash(i + vec2(0.0, 1.0));
+	float d = hash(i + vec2(1.0, 1.0));
+	return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+}
+
+float fbm(vec2 p) {
+	float v = 0.0;
+	float a = 0.5;
+	for (int i = 0; i < 5; i++) {
+		v += a * noise(p);
+		p = p * 2.02 + vec2(7.3, 3.1);
+		a *= 0.5;
+	}
+	return v;
+}
+
+void fragment() {
+	vec2 uv = UV;
+	float t = TIME * speed;
+
+	// 1.0 at the bottom of the rect, 0.0 where the flames end
+	float grad = clamp((uv.y - (1.0 - flame_height)) / flame_height, 0.0, 1.0);
+
+	// Noise coordinates that scroll upward
+	vec2 p = vec2(uv.x * noise_scale, uv.y * noise_scale * 0.9 + t);
+
+	// Warp the coordinates so the flames wiggle and curl
+	float warp = fbm(p * 0.8 + vec2(0.0, t * 0.6));
+	p.x += (warp - 0.5) * distortion * 4.0;
+
+	float n = fbm(p);
+
+	// Strong at the bottom, breaks apart into tongues toward the top
+	float f = n * (0.45 + grad * 1.2) + grad * fuel * 0.55 - 0.45;
+	f = clamp(f, 0.0, 1.0);
+
+	// Soft fade on the left and right edges
+	float edge = smoothstep(0.0, edge_fade + 0.0001, uv.x) * smoothstep(1.0, 1.0 - edge_fade - 0.0001, uv.x);
+	f *= edge;
+
+	// Colour ramp: dark red -> red -> orange -> yellow core
+	vec3 col = mix(color_dark.rgb, color_red.rgb, smoothstep(0.0, 0.30, f));
+	col = mix(col, color_orange.rgb, smoothstep(0.25, 0.60, f));
+	col = mix(col, color_core.rgb, smoothstep(0.55, 0.95, f));
+
+	COLOR = vec4(col * brightness, smoothstep(0.02, 0.30, f));
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_370w0"]
+shader = SubResource("Shader_jxsl3")
+shader_parameter/speed = 0.9
+shader_parameter/noise_scale = 10.0
+shader_parameter/distortion = 0.350000016625
+shader_parameter/flame_height = 1.0
+shader_parameter/fuel = 0.682000032395
+shader_parameter/edge_fade = 0.0
+shader_parameter/brightness = 0.7830000134424999
+shader_parameter/color_dark = Color(0, 0, 0, 1)
+shader_parameter/color_red = Color(0.85, 0.1, 0, 1)
+shader_parameter/color_orange = Color(1, 0.5, 0.05, 1)
+shader_parameter/color_core = Color(1, 0.95, 0.45, 1)
+
+[sub_resource type="Animation" id="Animation_xq17r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-112, 8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Logo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(746.86426, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_47any"]
+resource_name = "start"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-112, 150), Vector2(-112, 8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Logo:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(746.864, -150), Vector2(746.86426, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5ykuq"]
+_data = {
+&"RESET": SubResource("Animation_xq17r"),
+&"start": SubResource("Animation_47any")
+}
+
+[sub_resource type="Animation" id="Animation_jxsl3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_370w0"]
+resource_name = "new_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.54901963), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vtd3i"]
+_data = {
+&"RESET": SubResource("Animation_jxsl3"),
+&"new_animation": SubResource("Animation_370w0")
+}
+
+[node name="StartScreen" type="Control" unique_id=1533971997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_xq17r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=329178648]
+material = ExtResource("1_ut57m")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1340476957]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 8.0
+offset_right = 1096.0
+offset_bottom = 1531.6907
+texture = ExtResource("2_xq17r")
+
+[node name="Shadow" type="TextureRect" parent="TextureRect" unique_id=1818506361]
+modulate = Color(0, 0, 0, 0.54901963)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.015, 0.015)
+texture = ExtResource("2_xq17r")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=993298116]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 192.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_yf5fn")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=834386543]
+position = Vector2(960, 1335.9999)
+scale = Vector2(0.99999994, 0.99999994)
+amount = 50
+lifetime = 20.0
+emission_shape = 3
+emission_rect_extents = Vector2(973.99, 1)
+direction = Vector2(0, -1)
+gravity = Vector2(0, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
+angle_max = 360.0
+scale_amount_min = 0.0
+scale_amount_max = 20.0
+scale_amount_curve = SubResource("Curve_q8exk")
+color_ramp = SubResource("Gradient_ncp0x")
+
+[node name="Fire" type="ColorRect" parent="." unique_id=1292775619]
+material = SubResource("ShaderMaterial_370w0")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 528.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Logo" type="TextureRect" parent="." unique_id=2031356369]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1173.1357
+offset_right = 40.0
+offset_bottom = 568.0
+grow_horizontal = 0
+texture = ExtResource("3_xq17r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=396898583]
+libraries/ = SubResource("AnimationLibrary_5ykuq")
+autoplay = &"start"
+
+[node name="Label" type="Label" parent="." unique_id=1392260560]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -77.0
+offset_right = 200.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "PRESS ANY BUTTON"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label" unique_id=99371347]
+libraries/ = SubResource("AnimationLibrary_vtd3i")
+autoplay = &"new_animation"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=795432932]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)

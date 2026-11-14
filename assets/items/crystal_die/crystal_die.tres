@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dfckusvf8egtv"]
+
+[ext_resource type="Texture2D" uid="uid://d1uhwsteiwkxs" path="res://assets/items/crystal_die/crystal_die.png" id="1_nr2te"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_eaqr8"]
+
+[resource]
+script = ExtResource("2_eaqr8")
+id = 9
+item_sprite = ExtResource("1_nr2te")
+item_name = "Crystal Die"
+item_description = "> [color=yellow]Rerolls[/color] all non-empty item containers in the current room into [rare]rare[/rare] or [epic]epic[/epic] items"
+rarity = 4
+is_active = true
+active_charges = 7
+item_scene = "res://assets/items/crystal_die/crystal_die.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

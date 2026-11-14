@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://mtg6erdilc7g"]
+
+[ext_resource type="Texture2D" uid="uid://dp4t1d2akc22e" path="res://assets/items/die/die.png" id="1_rrigs"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_tyi0k"]
+
+[resource]
+script = ExtResource("2_tyi0k")
+id = 7
+item_sprite = ExtResource("1_rrigs")
+item_name = "Die"
+item_description = "> [color=yellow]Rerolls[/color] all non-empty item containers in the current room"
+rarity = 3
+is_active = true
+active_charges = 5
+item_scene = "res://assets/items/die/die.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

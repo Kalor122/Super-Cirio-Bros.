@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b68260wg788we"]
+
+[ext_resource type="Script" uid="uid://tso4lvmmrqtf" path="res://assets/items/shotgun/shotgun.gd" id="1_hufdl"]
+[ext_resource type="Resource" uid="uid://dma314e686t7b" path="res://assets/items/shotgun/shotgun.tres" id="2_hufdl"]
+
+[node name="Shotgun" type="Node" unique_id=1480106713]
+script = ExtResource("1_hufdl")
+data = ExtResource("2_hufdl")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

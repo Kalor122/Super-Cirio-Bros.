@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b7fmtjwmcp3i7"]
+
+[ext_resource type="Script" uid="uid://d232cl3r5o82g" path="res://assets/pellets/pellet_effects/test/test.gd" id="1_0tuc7"]
+
+[node name="Test" type="Node" unique_id=42809030]
+script = ExtResource("1_0tuc7")
+metadata/_custom_type_script = "uid://dtiej6f76bgut"

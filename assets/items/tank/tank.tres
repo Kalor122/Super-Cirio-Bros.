@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dkclpvrtvmfwu"]
+
+[ext_resource type="Texture2D" uid="uid://b0ohylvaplhlx" path="res://assets/items/tank/tank.png" id="1_hg68k"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_eoyon"]
+
+[resource]
+script = ExtResource("2_eoyon")
+id = 4
+item_sprite = ExtResource("1_hg68k")
+item_name = "Tank"
+item_description = "> [color=green]+3.50[/color] Damage
+> [color=green]+X2.50[/color] Damage Mult
+> [color=green]+0.75s[/color] Pellet Lifespan
+> [color=red]-X0.45[/color] Pellet Speed Mult
+> [color=red]-0.55[/color] Fire Rate"
+rarity = 4
+item_scene = "res://assets/items/tank/tank.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

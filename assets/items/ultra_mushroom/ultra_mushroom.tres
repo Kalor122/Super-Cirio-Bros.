@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://hfiji4vb87hb"]
+
+[ext_resource type="Texture2D" uid="uid://b10mtcujo3xy2" path="res://assets/items/ultra_mushroom/ultra_mushroom.png" id="1_ivatb"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_vuhqv"]
+
+[resource]
+script = ExtResource("2_vuhqv")
+id = 6
+item_sprite = ExtResource("1_ivatb")
+item_name = "Ultra Mushroom"
+item_description = "> [shk][rnb]+^0.20[/rnb][/shk] Damage Exp"
+rarity = 4
+item_scene = "res://assets/items/ultra_mushroom/ultra_mushroom.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

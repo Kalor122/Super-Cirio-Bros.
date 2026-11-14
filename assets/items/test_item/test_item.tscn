@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://35f7ladp2su0"]
+
+[ext_resource type="Script" uid="uid://d0n0llkur5m7n" path="res://assets/items/test_item/test_item.gd" id="1_xf4r3"]
+[ext_resource type="Resource" uid="uid://c7l136qqhkgix" path="res://assets/items/test_item/test_item.tres" id="2_xf4r3"]
+
+[node name="TestItem" type="Node" unique_id=611108368]
+script = ExtResource("1_xf4r3")
+data = ExtResource("2_xf4r3")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

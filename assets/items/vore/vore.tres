@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cqflbg7xxooiw"]
+
+[ext_resource type="Texture2D" uid="uid://q18ejq2tkypd" path="res://assets/items/item_sprite_placeholder.png" id="1_jt0wn"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_r81hs"]
+
+[resource]
+script = ExtResource("2_r81hs")
+id = 5
+item_sprite = ExtResource("1_jt0wn")
+item_name = "Vore"
+item_description = "> Cirio's pellets can now vore other pellets
+> Cirio's pellets gain [color=green]+0.20[/color] Damage for every pellet vored"
+rarity = 3
+item_scene = "res://assets/items/vore/vore.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bowwraqrt75ex"]
+
+[ext_resource type="Texture2D" uid="uid://buvcqjvoqtkj7" path="res://assets/items/fire_flower/fire_flower.png" id="1_s66l8"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_4qb3v"]
+
+[resource]
+script = ExtResource("2_4qb3v")
+id = 1
+item_sprite = ExtResource("1_s66l8")
+item_name = "Fire Flower"
+item_description = "> [color=red]-0.15[/color] Fire Rate
+> Pellets have a [color=yellow]35%[/color] chance to apply [color=pink]Burn[/color]
+> Chance is affected by Luck"
+rarity = 2
+item_scene = "res://assets/items/fire_flower/fire_flower.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

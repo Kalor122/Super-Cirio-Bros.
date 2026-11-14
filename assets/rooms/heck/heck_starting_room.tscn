@@ -1,0 +1,86 @@
+[gd_scene format=4 uid="uid://bmp7yf66a6aem"]
+
+[ext_resource type="PackedScene" uid="uid://cujs3dv8sibff" path="res://assets/rooms/heck_room_template.tscn" id="1_8px5k"]
+[ext_resource type="PackedScene" uid="uid://clbk4npqoc1k2" path="res://assets/cirio/cirio.tscn" id="2_mtl62"]
+[ext_resource type="PackedScene" uid="uid://1dbtcri2g2cm" path="res://assets/items/item_container.tscn" id="3_t7puu"]
+[ext_resource type="Resource" uid="uid://mtg6erdilc7g" path="res://assets/items/die/die.tres" id="4_mbjou"]
+
+[node name="Room" unique_id=1473045148 node_paths=PackedStringArray("exit_point") instance=ExtResource("1_8px5k")]
+starting_room = true
+exit_point = NodePath("Exit")
+
+[node name="TileMapLayer" parent="." index="0" unique_id=1831740468]
+tile_map_data = PackedByteArray("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")
+
+[node name="Cirio" parent="." index="3" unique_id=1711513904 instance=ExtResource("2_mtl62")]
+position = Vector2(0, 120)
+
+[node name="ItemContainer" parent="." index="4" unique_id=1739950554 instance=ExtResource("3_t7puu")]
+position = Vector2(24, 112)
+item = ExtResource("4_mbjou")
+item_rarity = 4
+
+[node name="ItemContainer2" parent="." index="5" unique_id=1114621834 instance=ExtResource("3_t7puu")]
+position = Vector2(-216, 112)
+
+[node name="ItemContainer3" parent="." index="6" unique_id=1654818489 instance=ExtResource("3_t7puu")]
+position = Vector2(-192, 112)
+
+[node name="ItemContainer4" parent="." index="7" unique_id=255069173 instance=ExtResource("3_t7puu")]
+position = Vector2(-168, 112)
+
+[node name="ItemContainer5" parent="." index="8" unique_id=253662060 instance=ExtResource("3_t7puu")]
+position = Vector2(-144, 112)
+item_rarity = 3
+
+[node name="ItemContainer6" parent="." index="9" unique_id=959063918 instance=ExtResource("3_t7puu")]
+position = Vector2(-120, 112)
+item_rarity = 3
+
+[node name="ItemContainer7" parent="." index="10" unique_id=943252187 instance=ExtResource("3_t7puu")]
+position = Vector2(-96, 112)
+item_rarity = 3
+
+[node name="ItemContainer8" parent="." index="11" unique_id=597322944 instance=ExtResource("3_t7puu")]
+position = Vector2(-72, 112)
+item_rarity = 4
+
+[node name="ItemContainer9" parent="." index="12" unique_id=1754747446 instance=ExtResource("3_t7puu")]
+position = Vector2(-48, 112)
+item_rarity = 4
+
+[node name="ItemContainer10" parent="." index="13" unique_id=222994451 instance=ExtResource("3_t7puu")]
+position = Vector2(48, 112)
+item_rarity = 4
+
+[node name="ItemContainer12" parent="." index="14" unique_id=243890340 instance=ExtResource("3_t7puu")]
+position = Vector2(72, 112)
+item_rarity = 4
+
+[node name="ItemContainer13" parent="." index="15" unique_id=379664684 instance=ExtResource("3_t7puu")]
+position = Vector2(96, 112)
+item_rarity = 4
+
+[node name="ItemContainer14" parent="." index="16" unique_id=1590319297 instance=ExtResource("3_t7puu")]
+position = Vector2(120, 112)
+item_rarity = 4
+
+[node name="ItemContainer15" parent="." index="17" unique_id=1036033191 instance=ExtResource("3_t7puu")]
+position = Vector2(144, 112)
+item_rarity = 4
+
+[node name="ItemContainer16" parent="." index="18" unique_id=942789671 instance=ExtResource("3_t7puu")]
+position = Vector2(168, 112)
+item_rarity = 4
+
+[node name="ItemContainer17" parent="." index="19" unique_id=1490813841 instance=ExtResource("3_t7puu")]
+position = Vector2(192, 112)
+item_rarity = 4
+
+[node name="ItemContainer18" parent="." index="20" unique_id=1721564318 instance=ExtResource("3_t7puu")]
+position = Vector2(216, 112)
+item_rarity = 4
+
+[node name="ItemContainer11" parent="." index="21" unique_id=469261333 instance=ExtResource("3_t7puu")]
+position = Vector2(-24, 112)
+item_rarity = 4

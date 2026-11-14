@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bl78b3qmk8m7y"]
+
+[ext_resource type="Script" uid="uid://by21x5k18f6wf" path="res://assets/items/vore/vore_effect.gd" id="1_8otw7"]
+
+[node name="VoreEffect" type="Node" unique_id=1698478810]
+script = ExtResource("1_8otw7")
+metadata/_custom_type_script = "uid://dtiej6f76bgut"

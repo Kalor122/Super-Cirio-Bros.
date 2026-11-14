@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://r6h4tj3e130q"]
+
+[ext_resource type="Texture2D" uid="uid://xctf0oaw4t1x" path="res://assets/items/super_mushroom/super_mushroom.png" id="1_u6kgr"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_r7a4q"]
+
+[resource]
+script = ExtResource("2_r7a4q")
+item_sprite = ExtResource("1_u6kgr")
+item_name = "Super Mushroom"
+item_description = "> [color=green]+0.50[/color] Damage
+> [color=green]+0.15[/color] Fire Rate"
+rarity = 1
+item_scene = "res://assets/items/super_mushroom/super_mushroom.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

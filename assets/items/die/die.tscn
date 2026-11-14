@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c5nqf66q28ifm"]
+
+[ext_resource type="Script" uid="uid://jc4ggny3gcba" path="res://assets/items/die/die.gd" id="1_j8rpn"]
+[ext_resource type="Resource" uid="uid://mtg6erdilc7g" path="res://assets/items/die/die.tres" id="2_j8rpn"]
+
+[node name="Die" type="Node" unique_id=287262461]
+script = ExtResource("1_j8rpn")
+data = ExtResource("2_j8rpn")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

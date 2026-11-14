@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c14iuxd2o8fut"]
+
+[ext_resource type="Script" uid="uid://cd4l6kpv6lxf7" path="res://assets/items/super_mushroom/super_mushroom.gd" id="1_er84w"]
+[ext_resource type="Resource" uid="uid://r6h4tj3e130q" path="res://assets/items/super_mushroom/super_mushroom.tres" id="2_er84w"]
+
+[node name="SuperMushroom" type="Node" unique_id=998196952]
+script = ExtResource("1_er84w")
+data = ExtResource("2_er84w")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

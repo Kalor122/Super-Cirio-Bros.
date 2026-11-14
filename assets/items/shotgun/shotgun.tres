@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dma314e686t7b"]
+
+[ext_resource type="Texture2D" uid="uid://cv1041do6m3v1" path="res://assets/items/shotgun/shotgun.png" id="1_u35og"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_38cv4"]
+
+[resource]
+script = ExtResource("2_38cv4")
+id = 3
+item_sprite = ExtResource("1_u35og")
+item_name = "Shotgun"
+item_description = "> Cirio shoots [color=yellow]2[/color] additional pellets
+> Pellets are stronger the closer they are to Cirio
+> [color=green]+X0.50[/color] Pellet Speed Mult"
+rarity = 3
+item_scene = "res://assets/items/shotgun/shotgun.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

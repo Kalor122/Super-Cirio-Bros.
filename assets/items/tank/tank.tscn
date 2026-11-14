@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b1vein6lytst5"]
+
+[ext_resource type="Script" uid="uid://chj1pcus0lvip" path="res://assets/items/tank/tank.gd" id="1_wdgss"]
+[ext_resource type="Resource" uid="uid://dkclpvrtvmfwu" path="res://assets/items/tank/tank.tres" id="2_wdgss"]
+
+[node name="Tank" type="Node" unique_id=1007544570]
+script = ExtResource("1_wdgss")
+data = ExtResource("2_wdgss")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

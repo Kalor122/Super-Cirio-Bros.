@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bfeas4phi4ypd"]
+
+[ext_resource type="PackedScene" uid="uid://c0urtqbpxeylh" path="res://assets/items/item_description.tscn" id="1_qs0fq"]
+[ext_resource type="Script" uid="uid://cckksm5hxuivn" path="res://assets/rooms/ui/ui.gd" id="1_sno5s"]
+[ext_resource type="PackedScene" uid="uid://f2uwkecg0fcn" path="res://assets/rooms/ui/stat_ui.tscn" id="2_qs0fq"]
+[ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="3_jjirh"]
+[ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="4_lof8d"]
+[ext_resource type="Texture2D" uid="uid://cp2122yrj36iq" path="res://assets/rooms/ui/ItemStock.png" id="5_sno5s"]
+[ext_resource type="FontFile" uid="uid://bbpgymgh5gr2m" path="res://assets/fonts/super-mario-bros-nes.ttf" id="7_sno5s"]
+
+[sub_resource type="StyleBox" id="StyleBox_g4v7s"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("4_lof8d")
+texture = ExtResource("5_sno5s")
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="Resource" id="Resource_iwidj"]
+script = ExtResource("3_jjirh")
+width_left = 1
+width_top = 1
+width_right = 1
+width_bottom = 1
+metadata/_custom_type_script = "uid://cjmmhbp1b5312"
+
+[sub_resource type="StyleBox" id="StyleBox_ernax"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = 6.0
+content_margin_right = -1.0
+content_margin_bottom = 6.0
+script = ExtResource("4_lof8d")
+color = Color(0, 0.24149992, 0.63, 0.41568628)
+borders = Array[ExtResource("3_jjirh")]([SubResource("Resource_iwidj")])
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBox" id="StyleBox_23o08"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("4_lof8d")
+color = Color(1, 0.939, 0.39, 1)
+expand_margin_left = -4.0
+expand_margin_top = -4.0
+expand_margin_right = -4.0
+expand_margin_bottom = -4.0
+shadow_enabled = true
+shadow_offset = Vector2(0.81, 0.97)
+shadow_spread = Vector2(-0.225, -0.225)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[node name="UI" type="CanvasLayer" unique_id=1022567655]
+script = ExtResource("1_sno5s")
+
+[node name="Control" type="Control" parent="." unique_id=886199984]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemDescription" parent="Control" unique_id=1650327380 instance=ExtResource("1_qs0fq")]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 128.0
+offset_right = 1840.0
+offset_bottom = 337.0
+
+[node name="StatUI" parent="Control" unique_id=345225972 instance=ExtResource("2_qs0fq")]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 128.0
+offset_right = 358.0
+offset_bottom = 551.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1412628950]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_top = 8.0
+offset_right = 60.0
+offset_bottom = 184.0
+grow_horizontal = 2
+
+[node name="ItemStock" type="PanelContainer" parent="Control/VBoxContainer" unique_id=1799890451]
+custom_minimum_size = Vector2(150, 150)
+custom_maximum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBox_g4v7s")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/VBoxContainer/ItemStock" unique_id=1159814985]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(80, 80)
+custom_maximum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.055, 0.055)
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer/ItemStock" unique_id=1613241870]
+custom_minimum_size = Vector2(80, 80)
+custom_maximum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Control/VBoxContainer" unique_id=1224953837]
+custom_minimum_size = Vector2(0, 31)
+custom_maximum_size = Vector2(-1, 31)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("7_sno5s")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/background = SubResource("StyleBox_ernax")
+theme_override_styles/fill = SubResource("StyleBox_23o08")
+value = 30.73

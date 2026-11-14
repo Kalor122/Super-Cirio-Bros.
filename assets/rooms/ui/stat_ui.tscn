@@ -1,0 +1,239 @@
+[gd_scene format=3 uid="uid://f2uwkecg0fcn"]
+
+[ext_resource type="FontFile" uid="uid://bbpgymgh5gr2m" path="res://assets/fonts/super-mario-bros-nes.ttf" id="1_m13dv"]
+[ext_resource type="Script" uid="uid://c0c2sia7oisdo" path="res://assets/rooms/ui/stat_ui.gd" id="2_ywqxg"]
+[ext_resource type="Texture2D" uid="uid://0sgo1e50ta0a" path="res://assets/rooms/ui/damage_icon.png" id="3_hea00"]
+[ext_resource type="Texture2D" uid="uid://dljlcmcctcmyy" path="res://assets/rooms/ui/damage_x_icon.png" id="4_h3wir"]
+[ext_resource type="Shader" uid="uid://248k74bv46yk" path="res://assets/shaders/rainbow.gdshader" id="4_ywqxg"]
+[ext_resource type="Texture2D" uid="uid://c5sqcmmtlmapo" path="res://assets/rooms/ui/damage_exp_icon.png" id="5_bsasb"]
+[ext_resource type="Texture2D" uid="uid://dmjn4vsp78u6i" path="res://assets/rooms/ui/fire_rate_icon.png" id="6_tuw6o"]
+[ext_resource type="Texture2D" uid="uid://cmacnbyo3csct" path="res://assets/rooms/ui/pellet_speed_mult_icon.png" id="7_4xhw0"]
+[ext_resource type="Texture2D" uid="uid://tdbwyrdy36q0" path="res://assets/rooms/ui/pellet_lifespan_icon.png" id="8_otb01"]
+[ext_resource type="Texture2D" uid="uid://dgju736itp3b6" path="res://assets/rooms/ui/luck_icon.png" id="9_lt1eh"]
+
+[sub_resource type="Theme" id="Theme_g4v7s"]
+Label/constants/outline_size = 5
+Label/font_sizes/font_size = 20
+Label/fonts/font = ExtResource("1_m13dv")
+
+[sub_resource type="LabelSettings" id="LabelSettings_ve2y3"]
+font_size = 20
+font_color = Color(0.39215687, 1, 0.3019608, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ksap0"]
+font_size = 20
+font_color = Color(0.3019608, 0.73333335, 1, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wa3fc"]
+font_size = 20
+font_color = Color(0.42745098, 0.3019608, 1, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gjxkp"]
+font_size = 20
+font_color = Color(1, 0.3019608, 0.3137255, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qc4ey"]
+font_size = 20
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g4v7s"]
+shader = ExtResource("4_ywqxg")
+shader_parameter/strength = 0.70000003325
+shader_parameter/speed = 0.5
+shader_parameter/angle = 0.0
+
+[node name="StatUI" type="VBoxContainer" unique_id=345225972]
+modulate = Color(1, 1, 1, 0.5882353)
+offset_right = 88.0
+offset_bottom = 80.0
+theme = SubResource("Theme_g4v7s")
+script = ExtResource("2_ywqxg")
+
+[node name="DamageStatContainer" type="HBoxContainer" parent="." unique_id=237281078]
+layout_mode = 2
+
+[node name="StatImage" type="TextureRect" parent="DamageStatContainer" unique_id=1437967876]
+custom_maximum_size = Vector2(55, 55)
+layout_mode = 2
+texture = ExtResource("3_hea00")
+
+[node name="Label" type="Label" parent="DamageStatContainer" unique_id=1662150717]
+layout_mode = 2
+text = "0.00"
+
+[node name="DamageXStatContainer" type="HBoxContainer" parent="." unique_id=981342741]
+layout_mode = 2
+
+[node name="StatImage" type="TextureRect" parent="DamageXStatContainer" unique_id=102336972]
+custom_maximum_size = Vector2(55, 55)
+layout_mode = 2
+texture = ExtResource("4_h3wir")
+
+[node name="Label" type="Label" parent="DamageXStatContainer" unique_id=1464022102]
+layout_mode = 2
+text = "0.00"
+
+[node name="DamageEXStatContainer" type="HBoxContainer" parent="." unique_id=641577093]
+layout_mode = 2
+
+[node name="StatImage" type="TextureRect" parent="DamageEXStatContainer" unique_id=1677175176]
+custom_maximum_size = Vector2(55, 55)
+layout_mode = 2
+texture = ExtResource("5_bsasb")
+
+[node name="Label" type="Label" parent="DamageEXStatContainer" unique_id=356870399]
+layout_mode = 2
+text = "0.00"
+
+[node name="FireRateStatContainer" type="HBoxContainer" parent="." unique_id=2120423845]
+layout_mode = 2
+
+[node name="StatImage" type="TextureRect" parent="FireRateStatContainer" unique_id=1885629876]
+custom_maximum_size = Vector2(55, 55)
+layout_mode = 2
+texture = ExtResource("6_tuw6o")
+
+[node name="Label" type="Label" parent="FireRateStatContainer" unique_id=251222763]
+layout_mode = 2
+text = "0.00"
+
+[node name="PelletSXStatContainer" type="HBoxContainer" parent="." unique_id=2105323319]
+layout_mode = 2
+
+[node name="StatImage" type="TextureRect" parent="PelletSXStatContainer" unique_id=968647624]
+custom_maximum_size = Vector2(55, 55)
+layout_mode = 2
+texture = ExtResource("7_4xhw0")
+
+[node name="Label" type="Label" parent="PelletSXStatContainer" unique_id=2068915017]
+layout_mode = 2
+text = "0.00"
+
+[node name="LifespanStatContainer" type="HBoxContainer" parent="." unique_id=951524153]
+layout_mode = 2
+
+[node name="StatImage" type="TextureRect" parent="LifespanStatContainer" unique_id=1341538451]
+custom_maximum_size = Vector2(55, 55)
+layout_mode = 2
+texture = ExtResource("8_otb01")
+
+[node name="Label" type="Label" parent="LifespanStatContainer" unique_id=2104158739]
+layout_mode = 2
+text = "0.00"
+
+[node name="Luck" type="HBoxContainer" parent="." unique_id=357527790]
+layout_mode = 2
+
+[node name="StatImage" type="TextureRect" parent="Luck" unique_id=107167519]
+custom_maximum_size = Vector2(55, 55)
+layout_mode = 2
+texture = ExtResource("9_lt1eh")
+
+[node name="Label" type="Label" parent="Luck" unique_id=665817152]
+layout_mode = 2
+text = "0.00"
+
+[node name="Control" type="Control" parent="." unique_id=1374630924]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="." unique_id=2061452247]
+layout_mode = 2
+text = "rarity chances:"
+
+[node name="CommonContainer" type="HBoxContainer" parent="." unique_id=1011227444]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CommonContainer" unique_id=857325641]
+layout_mode = 2
+text = "common"
+label_settings = SubResource("LabelSettings_ve2y3")
+
+[node name="Control" type="Control" parent="CommonContainer" unique_id=1511565959]
+custom_minimum_size = Vector2(25.49, 0)
+layout_mode = 2
+
+[node name="Chance" type="Label" parent="CommonContainer" unique_id=1985648033]
+layout_mode = 2
+text = "0.00%"
+
+[node name="UncommonContainer" type="HBoxContainer" parent="." unique_id=1586910353]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UncommonContainer" unique_id=1740240052]
+layout_mode = 2
+text = "uncommon"
+label_settings = SubResource("LabelSettings_ksap0")
+
+[node name="Control" type="Control" parent="UncommonContainer" unique_id=2082368349]
+custom_minimum_size = Vector2(25.49, 0)
+layout_mode = 2
+
+[node name="Chance" type="Label" parent="UncommonContainer" unique_id=1271601205]
+layout_mode = 2
+text = "0.00%"
+
+[node name="RareContainer" type="HBoxContainer" parent="." unique_id=8062426]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="RareContainer" unique_id=499269]
+layout_mode = 2
+text = "rare"
+label_settings = SubResource("LabelSettings_wa3fc")
+
+[node name="Control" type="Control" parent="RareContainer" unique_id=477265959]
+custom_minimum_size = Vector2(25.49, 0)
+layout_mode = 2
+
+[node name="Chance" type="Label" parent="RareContainer" unique_id=1880727618]
+layout_mode = 2
+text = "0.00%"
+
+[node name="EpicContainer" type="HBoxContainer" parent="." unique_id=1731233596]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="EpicContainer" unique_id=915357130]
+layout_mode = 2
+text = "epic"
+label_settings = SubResource("LabelSettings_gjxkp")
+
+[node name="Control" type="Control" parent="EpicContainer" unique_id=220496197]
+custom_minimum_size = Vector2(25.49, 0)
+layout_mode = 2
+
+[node name="Chance" type="Label" parent="EpicContainer" unique_id=673797635]
+layout_mode = 2
+text = "0.00%"
+
+[node name="GodlikeContainer" type="HBoxContainer" parent="." unique_id=1443841592]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GodlikeContainer" unique_id=982349500]
+clip_children = 2
+layout_mode = 2
+text = "godlike"
+label_settings = SubResource("LabelSettings_qc4ey")
+
+[node name="ColorRect" type="ColorRect" parent="GodlikeContainer/Label" unique_id=1165839509]
+material = SubResource("ShaderMaterial_g4v7s")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="GodlikeContainer" unique_id=1635672417]
+custom_minimum_size = Vector2(25.49, 0)
+layout_mode = 2
+
+[node name="Chance" type="Label" parent="GodlikeContainer" unique_id=115327203]
+layout_mode = 2
+text = "0.00%"

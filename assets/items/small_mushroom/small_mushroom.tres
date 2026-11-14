@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://syl7lkm0cn5i"]
+
+[ext_resource type="Texture2D" uid="uid://b8wfmc5tlrpjy" path="res://assets/items/small_mushroom/super_mushroom.png" id="1_26mhg"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_gv58n"]
+
+[resource]
+script = ExtResource("2_gv58n")
+id = 2
+item_sprite = ExtResource("1_26mhg")
+item_name = "Small Mushroom"
+item_description = "> [color=green]+0.25[/color] Damage"
+item_scene = "res://assets/items/small_mushroom/small_mushroom.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://6gltccdln2nl"]
+
+[ext_resource type="Script" uid="uid://bwh0bup4nkxef" path="res://assets/items/shotgun/shotgun_effect.gd" id="1_lxqqs"]
+
+[node name="ShotgunEffect" type="Node" unique_id=1942269945]
+script = ExtResource("1_lxqqs")
+metadata/_custom_type_script = "uid://dtiej6f76bgut"

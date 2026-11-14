@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://c7l136qqhkgix"]
+
+[ext_resource type="Texture2D" uid="uid://bcw4cw3wi042y" path="res://assets/items/test_item/test_item.png" id="1_71l3e"]
+[ext_resource type="Script" uid="uid://beodtchord8fx" path="res://assets/items/item_data_class.gd" id="2_lpwxy"]
+
+[resource]
+script = ExtResource("2_lpwxy")
+id = -1
+item_sprite = ExtResource("1_71l3e")
+item_name = "Test Item"
+item_description = "asd"
+item_scene = "res://assets/items/test_item/test_item.tscn"
+metadata/_custom_type_script = "uid://beodtchord8fx"

@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dokgddy10uuf7"]
+
+[ext_resource type="Shader" uid="uid://ns3w26ek3r4p" path="res://assets/shaders/noise_overlay.gdshader" id="1_mhcj8"]
+
+[sub_resource type="Gradient" id="Gradient_2wjib"]
+offsets = PackedFloat32Array(0, 0.66523606, 0.90128756)
+colors = PackedColorArray(0.55, 0, 0, 0, 0.2, 0, 0, 1, 0.37, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vwonp"]
+gradient = SubResource("Gradient_2wjib")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_57qmd"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_yf5fn"]
+width = 789
+height = 785
+noise = SubResource("FastNoiseLite_57qmd")
+seamless = true
+
+[resource]
+shader = ExtResource("1_mhcj8")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_yf5fn")
+shader_parameter/noise_scroll_speed = Vector2(0.05, 0.03)
+shader_parameter/noise_scale = 0.50000002049012
+shader_parameter/noise_color = Color(1, 1, 1, 0.5)
+shader_parameter/use_gradient = true
+shader_parameter/noise_gradient = SubResource("GradientTexture1D_vwonp")
+shader_parameter/gradient_strength = 1.0
+shader_parameter/blend_mode = 0

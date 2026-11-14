@@ -1,0 +1,31 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://81lkth7ptb1l"]
+
+[ext_resource type="Shader" uid="uid://bo0h87mlhicbv" path="res://assets/shaders/black_hole.gdshader" id="1_7d01c"]
+
+[sub_resource type="Gradient" id="Gradient_uyu5t"]
+offsets = PackedFloat32Array(0.36909872, 0.66523606)
+colors = PackedColorArray(0.31000006, 1, 0.100000024, 1, 0, 0.26033342, 0.71, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_si6ue"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3j6uv"]
+noise = SubResource("FastNoiseLite_si6ue")
+color_ramp = SubResource("Gradient_uyu5t")
+seamless = true
+
+[sub_resource type="Gradient" id="Gradient_b2rll"]
+offsets = PackedFloat32Array(0, 0.84549356)
+colors = PackedColorArray(0.31000006, 1, 0.100000024, 1, 0.100000024, 0.43000013, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vah8h"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_xfwmb"]
+noise = SubResource("FastNoiseLite_vah8h")
+color_ramp = SubResource("Gradient_b2rll")
+seamless = true
+
+[resource]
+shader = ExtResource("1_7d01c")
+shader_parameter/iChannel0 = SubResource("NoiseTexture2D_3j6uv")
+shader_parameter/iChannel1 = SubResource("NoiseTexture2D_xfwmb")
+shader_parameter/screen_resolution = 1.0

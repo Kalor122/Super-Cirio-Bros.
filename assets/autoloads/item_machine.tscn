@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dfx0y64vm88pe"]
+
+[ext_resource type="Script" uid="uid://dn2b6vcjd4fjp" path="res://assets/autoloads/item_machine.gd" id="1_p6f4y"]
+
+[node name="ItemMachine" type="Node" unique_id=1297989025]
+script = ExtResource("1_p6f4y")
+
+[node name="ActiveItem" type="Node" parent="." unique_id=299586523]

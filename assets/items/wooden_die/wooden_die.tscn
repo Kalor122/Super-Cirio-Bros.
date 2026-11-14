@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cglbaxyce1ncc"]
+
+[ext_resource type="Script" uid="uid://cexmpycdip4qs" path="res://assets/items/wooden_die/wooden_die.gd" id="1_mqg1a"]
+[ext_resource type="Resource" uid="uid://c4mv54cntvxnt" path="res://assets/items/wooden_die/wooden_die.tres" id="2_mqg1a"]
+
+[node name="WoodenDie" type="Node" unique_id=1822336529]
+script = ExtResource("1_mqg1a")
+data = ExtResource("2_mqg1a")
+metadata/_custom_type_script = "uid://heleskmvh4ri"

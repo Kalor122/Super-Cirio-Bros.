@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bads3jinoj3eo"]
+
+[ext_resource type="Script" uid="uid://d1f2kefrxg537" path="res://assets/rooms/level_class.gd" id="1_8pihm"]
+[ext_resource type="PackedScene" uid="uid://b1qya0sn3aukg" path="res://assets/rooms/heck/assets/bg/heck_bg.tscn" id="2_iwidj"]
+[ext_resource type="Script" uid="uid://bojicl845r1fd" path="res://assets/rooms/room_camera_class.gd" id="3_2ixnp"]
+[ext_resource type="PackedScene" uid="uid://bfeas4phi4ypd" path="res://assets/rooms/ui/ui.tscn" id="4_ernax"]
+
+[node name="Level" type="Node2D" unique_id=1137173512 node_paths=PackedStringArray("cursor", "camera")]
+script = ExtResource("1_8pihm")
+cursor = NodePath("Cursor")
+camera = NodePath("RoomCamera")
+background = ExtResource("2_iwidj")
+metadata/_custom_type_script = "uid://d1f2kefrxg537"
+
+[node name="Cursor" type="Marker2D" parent="." unique_id=164891854]
+
+[node name="RoomCamera" type="Camera2D" parent="." unique_id=1233720549]
+zoom = Vector2(3.75, 3.75)
+limit_smoothed = true
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+editor_draw_limits = true
+script = ExtResource("3_2ixnp")
+metadata/_custom_type_script = "uid://bojicl845r1fd"
+
+[node name="UI" parent="." unique_id=1022567655 instance=ExtResource("4_ernax")]

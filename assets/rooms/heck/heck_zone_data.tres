@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Zone" format=3 uid="uid://bhknlrbawc0yb"]
+
+[ext_resource type="Script" uid="uid://bhtt7jmqjsejp" path="res://assets/rooms/zone_class.gd" id="1_7gpox"]
+
+[resource]
+script = ExtResource("1_7gpox")
+zone_name = "Heck"
+starting_room = "uid://bmp7yf66a6aem"
+rooms = Array[String](["uid://lrvd8c5ky0r4", "uid://bx611xl5e2dms", "uid://ct6d1yyfnw648", "uid://cdppnu2ks0vnx", "uid://rh78tn7xyo6u", "uid://dysrql4gtot0n", "uid://b53km05xqi4qq", "uid://b2263l0fp1hje"])
+metadata/_custom_type_script = "uid://bhtt7jmqjsejp"

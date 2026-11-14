@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cxfb2mf1pqks2"]
+
+[ext_resource type="Script" uid="uid://dqo1eys1r3hlf" path="res://assets/items/small_mushroom/small_mushroom.gd" id="1_6m7ea"]
+[ext_resource type="Resource" uid="uid://syl7lkm0cn5i" path="res://assets/items/small_mushroom/small_mushroom.tres" id="2_6m7ea"]
+
+[node name="SmallMushroom" type="Node" unique_id=293366085]
+script = ExtResource("1_6m7ea")
+data = ExtResource("2_6m7ea")
+metadata/_custom_type_script = "uid://heleskmvh4ri"
